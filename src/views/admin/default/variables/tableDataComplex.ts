@@ -1,34 +1,36 @@
 type RowObj = {
-	name: string;
-	status: string;
-	date: string;
-	progress: number;
-};
-
-const tableDataComplex: RowObj[] = [
+	name: string; // Item name
+	progress: number; // Popularity in percentage
+	status: string; // Current stock status
+	date: string; // Date when the item was last updated
+  };
+  
+  const tableDataComplex: RowObj[] = [
 	{
-		name: 'Horizon UI PRO',
-		progress: 75.5,
-		status: 'Approved',
-		date: '12 Jan 2021'
+	  name: 'Cheeseburger',
+	  progress: 85.5,
+	  status: 'Available',
+	  date: '12 Nov 2024',
 	},
 	{
-		name: 'Horizon UI Free',
-		progress: 25.5,
-		status: 'Disable',
-		date: '21 Feb 2021'
+	  name: 'Pepperoni Pizza',
+	  progress: 75.2,
+	  status: 'Available',
+	  date: '11 Nov 2024',
 	},
 	{
-		name: 'Weekly Update',
-		progress: 90,
-		status: 'Error',
-		date: '13 Mar 2021'
+	  name: 'Grilled Chicken Salad',
+	  progress: 65.8,
+	  status: 'Low Stock',
+	  date: '10 Nov 2024',
 	},
 	{
-		name: 'Marketplace',
-		progress: 50.5,
-		status: 'Approved',
-		date: '24 Oct 2022'
-	}
-];
-export default tableDataComplex;
+	  name: 'Veggie Wrap',
+	  progress: 50.3,
+	  status: 'Out of Stock',
+	  date: '09 Nov 2024',
+	},
+  ];
+  
+  export default tableDataComplex;
+  
