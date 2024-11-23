@@ -1,47 +1,36 @@
 type RowObj = {
-	name: [string, boolean];
-	progress: string;
-	quantity: number;
-	date: string;
-	info: boolean;
-};
-
-const tableDataCheck: RowObj[] = [
+	name: string; // Name of the item
+	totalSales: number; // Total quantity sold
+	revenue: string; // Revenue generated
+	status: string; // Stock status
+  };
+  
+  const tableDataCheck: RowObj[] = [
 	{
-		name: [ 'Horizon UI PRO', true ],
-		quantity: 2458,
-		progress: '17.5%',
-		date: '12 Jan 2021',
-		info: true
+	  name: 'Cheeseburger',
+	  totalSales: 1248,
+	  revenue: '£9,984',
+	  status: 'Available',
 	},
 	{
-		name: [ 'Horizon UI Free', true ],
-		quantity: 1485,
-		progress: '10.8%',
-		date: '21 Feb 2021',
-		info: true
+	  name: 'Pepperoni Pizza',
+	  totalSales: 948,
+	  revenue: '£7,584',
+	  status: 'Available',
 	},
 	{
-		name: [ 'Weekly Update', true ],
-		quantity: 1024,
-		progress: '21.3%',
-		date: '13 Mar 2021',
-		info: true
+	  name: 'Grilled Chicken Salad',
+	  totalSales: 720,
+	  revenue: '£5,760',
+	  status: 'Low Stock',
 	},
 	{
-		name: [ 'Venus 3D Asset', true ],
-		quantity: 858,
-		progress: '31.5%',
-		date: '24 Jan 2021',
-		info: true
+	  name: 'Veggie Wrap',
+	  totalSales: 450,
+	  revenue: '£3,600',
+	  status: 'Out of Stock',
 	},
-	{
-		name: [ 'Marketplace', true ],
-		quantity: 258,
-		progress: '12.2%',
-		date: '24 Oct 2022',
-		info: true
-	}
-];
-
-export default tableDataCheck;
+  ];
+  
+  export default tableDataCheck;
+  
